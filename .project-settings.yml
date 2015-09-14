@@ -1,9 +1,18 @@
+binary-ghc-args:
+- -O
+- -threaded
 module-template: ! 'module MODULE_NAME where
 
 '
 extensions: {}
 environment: ghc-7.8-stable-14.09
+auto-hidden: []
 cabal-file: project.cabal
 version: 1
+extra-packages: ! 'Hackage: monad-mersenne-random 0.1
+
+  Hackage: gray-code 0.3.1
+
+  Git: https://github.com/astanin/moo.git 83f536181bd7df5476554b3aee04f4f7c3c65827'
 ghc-args: []
 excluded-modules: []
